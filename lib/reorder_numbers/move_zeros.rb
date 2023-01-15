@@ -5,7 +5,7 @@ module ReorderNumbers
     def self.call(numbers)
       validate_input(numbers)
 
-      # Add code here
+      numbers.partition { |elem| elem == 0 }.reverse.inject(:+)
     end
 
     private
