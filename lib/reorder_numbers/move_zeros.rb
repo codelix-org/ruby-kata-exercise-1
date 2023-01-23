@@ -4,8 +4,8 @@ module ReorderNumbers
 
     def self.call(numbers)
       validate_input(numbers)
-
       # Add code here
+      numbers.partition { |v| v != 0 }.flatten(1)
     end
 
     private
