@@ -4,8 +4,7 @@ module ReorderNumbers
 
     def self.call(numbers)
       validate_input(numbers)
-
-      # Add code here
+      numbers.partition { |number| number == 0 }.reverse.flatten
     end
 
     private
