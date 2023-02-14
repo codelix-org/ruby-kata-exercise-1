@@ -5,7 +5,10 @@ module ReorderNumbers
     def self.call(numbers)
       validate_input(numbers)
 
-      # Add code here
+      zeros = numbers.count(0)
+      numbers.delete(0)
+      zeros.times { numbers.push(0) }
+      numbers
     end
 
     private
